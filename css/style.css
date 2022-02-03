@@ -40,8 +40,44 @@ img {
   width: 100%;
 }
 
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  overflow: auto;
+  padding: 0 4rem;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+/* Navbar Section */
+.navbar .flex {
+  justify-content: space-between;
+}
+
 .navbar {
   background-color: #047aed;
   color: #fff;
   height: 70px;
+}
+
+.navbar ul {
+  display: flex;
+  gap: 1rem;
+}
+
+.navbar a {
+  color: #fff;
+  margin: 0 0.5rem;
+  padding: 1rem;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  border-bottom: 2px #fff solid;
 }
