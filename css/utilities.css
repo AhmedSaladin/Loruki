@@ -1,0 +1,22 @@
+.container {
+  max-width: 110rem;
+  margin: 0 auto;
+  overflow: auto;
+  padding: 0 4rem;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
