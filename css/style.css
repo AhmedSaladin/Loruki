@@ -153,3 +153,22 @@ img {
 .showcase a {
   font-size: 1.6rem;
 }
+
+/* State */
+.stats {
+  padding-top: 10rem;
+}
+
+.stats-heading {
+  max-width: 50rem;
+  margin: auto;
+}
+
+.stats .grid h3 {
+  font-size: 3.5rem;
+}
+
+.stats .grid p {
+  font-size: 2rem;
+  font-weight: bold;
+}

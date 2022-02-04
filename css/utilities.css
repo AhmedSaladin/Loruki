@@ -21,6 +21,10 @@
   height: 100%;
 }
 
+.grid-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
 .card {
   background-color: var(--white-color);
   color: var(--grey-color);
@@ -47,4 +51,95 @@
 
 .btn:hover {
   transform: scale(0.8);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.t-16 {
+  font-size: 1.6rem;
+}
+
+/* margin */
+.mY-1 {
+  margin: 1.6rem 0;
+}
+
+.mY-2 {
+  margin: 2.4rem 0;
+}
+
+.mY-3 {
+  margin: 3.2rem 0;
+}
+
+.mY-4 {
+  margin: 4.8rem 0;
+}
+
+.mY-5 {
+  margin: 6.4rem 0;
+}
+
+.m-1 {
+  margin: 1.6rem;
+}
+
+.m-2 {
+  margin: 2.4rem;
+}
+
+.m-3 {
+  margin: 3.2rem;
+}
+
+.m-4 {
+  margin: 4.8rem;
+}
+
+.m-5 {
+  margin: 6.4rem;
+}
+
+/* padding */
+
+.pY-1 {
+  padding: 1.6rem 0;
+}
+
+.pY-2 {
+  padding: 2.4rem 0;
+}
+
+.pY-3 {
+  padding: 3.2rem 0;
+}
+
+.pY-4 {
+  padding: 4.8rem 0;
+}
+
+.pY-5 {
+  padding: 6.4rem 0;
+}
+  
+.p-1 {
+  padding: 1.6rem;
+}
+
+.p-2 {
+  padding: 2.4rem;
+}
+
+.p-3 {
+  padding: 3.2rem;
+}
+
+.p-4 {
+  padding: 4.8rem;
+}
+
+.p-5 {
+  padding: 6.4rem;
 }
