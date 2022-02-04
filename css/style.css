@@ -1,4 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
+@import url("./utilities.css");
+:root {
+  --primary-color: #047aed;
+  --secondary-color: #1c3fa8;
+  --dark-color: #002240;
+  --light-color: #f4f4f4;
+  --success-color: #5cb85c;
+  --error-color: #d9534f;
+  --grey-color: #333;
+  --white-color: #fff;
+}
 
 * {
   box-sizing: border-box;
@@ -12,7 +23,7 @@ html {
 
 body {
   font-family: "lato", "sans-serif";
-  color: #333;
+  color: var(--grey-color);
   line-height: 1.6;
 }
 
@@ -22,7 +33,7 @@ ul {
 
 a {
   text-decoration: none;
-  color: #333;
+  color: var(--grey-color);
 }
 
 h1,
@@ -40,29 +51,19 @@ img {
   width: 100%;
 }
 
-.container {
-  max-width: 1100px;
-  margin: 0 auto;
-  overflow: auto;
-  padding: 0 4rem;
-}
-
-.flex {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-}
-
 /* Navbar Section */
 .navbar .flex {
   justify-content: space-between;
 }
 
 .navbar {
-  background-color: #047aed;
-  color: #fff;
-  height: 70px;
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  height: 7rem;
+}
+
+.logo {
+  font-size: 3.5rem;
 }
 
 .navbar ul {
@@ -71,7 +72,7 @@ img {
 }
 
 .navbar a {
-  color: #fff;
+  color: var(--white-color);
   margin: 0 0.5rem;
   padding: 1rem;
   font-size: 1.6rem;
@@ -79,5 +80,76 @@ img {
 }
 
 .navbar a:hover {
-  border-bottom: 2px #fff solid;
+  border-bottom: 2px var(--white-color) solid;
+}
+
+/* Showcase */
+.showcase {
+  background-color: var(--primary-color);
+  height: 40rem;
+  color: var(--white-color);
+  position: relative;
+}
+
+.showcase::before,
+.showcase::after {
+  content: "";
+  position: absolute;
+  height: 10rem;
+  bottom: -7rem;
+  right: 0;
+  left: 0;
+  background-color: var(--white-color);
+  transform: skewY(-3deg);
+  -webkit-transform: skewY(-3deg);
+  -moz-transform: skewY(-3deg);
+  -ms-transform: skewY(-3deg);
+}
+
+.showcase .grid {
+  overflow: visible;
+}
+
+.showcase-form {
+  position: relative;
+  top: 6rem;
+  height: 35rem;
+  width: 40rem;
+  padding: 4rem;
+  z-index: 10;
+  justify-self: flex-end;
+}
+
+.showcase-form .form-control {
+  margin: 3rem 0;
+}
+
+.showcase-form input[type="text"],
+.showcase-form input[type="email"] {
+  border: 0;
+  border-bottom: 1px solid #babecb;
+  width: 100%;
+  padding: 3px;
+  font-size: 1.6rem;
+}
+
+.showcase-form input:focus {
+  outline: none;
+}
+
+.showcase h1 {
+  font-size: 4rem;
+}
+
+.showcase h2 {
+  font-size: 2rem;
+}
+
+.showcase p {
+  margin: 2rem 0;
+  font-size: 1.6rem;
+}
+
+.showcase a {
+  font-size: 1.6rem;
 }
