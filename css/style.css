@@ -126,6 +126,12 @@ pre {
   padding: 4rem;
   z-index: 10;
   justify-self: flex-end;
+  animation: slideInFormRight 1s ease-in;
+
+}
+
+.showcase-text {
+  animation: slideInFormLeft 1s ease-in;
 }
 
 .showcase-form .form-control {
@@ -165,11 +171,13 @@ pre {
 /* State */
 .stats {
   padding-top: 10rem;
+  animation: slideInFormBottom 1s ease-in;
 }
 
 .stats-heading {
   max-width: 50rem;
   margin: auto;
+
 }
 
 .stats .grid h3 {
@@ -271,6 +279,43 @@ pre {
 
 .docs-main a:hover {
   font-weight: bold;
+}
+
+/* Animation */
+@keyframes slideInFormLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFormRight {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFormBottom {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInFormTop {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 /* Tablets and under */
