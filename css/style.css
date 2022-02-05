@@ -268,3 +268,8 @@ img {
   width: 200px;
   justify-self: flex-end;
 }
+
+.features-sub  img{
+  width: 300px;
+  justify-self: flex-end;
+}
