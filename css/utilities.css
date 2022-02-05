@@ -61,6 +61,46 @@
   font-size: 1.6rem;
 }
 
+.t-20 {
+  font-size: 2rem;
+}
+
+.t-32 {
+  font-size: 3.2rem;
+}
+
+.t-48 {
+  font-size: 4.8rem;
+}
+
+.t-64 {
+  font-size: 6.4rem;
+}
+
+.bg-primary,
+.btn-primary {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+}
+
+.bg-secondary,
+.btn-secondary {
+  background-color: var(--secondary-color);
+  color: var(--white-color);
+}
+
+.bg-dark,
+.btn-dark {
+  background-color: var(--dark-color);
+  color: var(--white-color);
+}
+
+.bg-light,
+.btn-light {
+  background-color: var(--white-color);
+  color: var(--grey-color);
+}
+
 /* margin */
 .mY-1 {
   margin: 1.6rem 0;
@@ -123,7 +163,7 @@
 .pY-5 {
   padding: 6.4rem 0;
 }
-  
+
 .p-1 {
   padding: 1.6rem;
 }
