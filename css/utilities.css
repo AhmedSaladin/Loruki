@@ -56,23 +56,23 @@
 .text-center {
   text-align: center;
 }
-
+/* default */
 .t-16 {
   font-size: 1.6rem;
 }
-
+/* lead */
 .t-20 {
   font-size: 2rem;
 }
-
+/* md */
 .t-32 {
   font-size: 3.2rem;
 }
-
+/* lg */
 .t-48 {
   font-size: 4.8rem;
 }
-
+/* xl */
 .t-64 {
   font-size: 6.4rem;
 }
